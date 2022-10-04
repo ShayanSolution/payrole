@@ -1,0 +1,53 @@
+[
+    {
+        "first_name": "John",
+        "last_name": "Jeff",
+        "father_name": "Jeff K.",
+        "email": "JohnJeff@armyspy.com",
+        "official_email": "Jeff@armyspy.com",
+        "mobile_number": "01.61.26.68.47",
+        "residential_number": "01.61.26.68.470",
+        "national_id_number": "147062707811231257",
+        "date_of_birth": "1977-11-18",
+        "residential_address": "6asdasdard 94260 FRESNES",
+        "permanent_address": "House#251-Clincton-DC",
+        "joining_date": "2015-01-01",
+        "salary": "$1000",
+        "status": "Internee",
+        "job_title": "Senior Developer"
+    },
+    {
+        "first_name": "Zwed",
+        "last_name": "Shyn",
+        "father_name": "Zwed K.",
+        "email": "Shyn@armyspy.com",
+        "official_email": "Shyn@armyspy.com",
+        "mobile_number": "01.61.26.68.47",
+        "residential_number": "01.61.26.68.470",
+        "national_id_number": "147062707811231257 46X",
+        "date_of_birth": "1977-11-18",
+        "residential_address": "6asdasdard 94260 FRESNES",
+        "permanent_address": "Ehas s ambard 94260 FRESNES",
+        "joining_date": "2015-01-01",
+        "salary": "$1000",
+        "status": "Permanent",
+        "job_title": "Senior Developer"
+    },
+    {
+        "first_name": "Zwardo",
+        "last_name": "Shyn",
+        "father_name": "Zwardo K.",
+        "email": "Zwardo@armyspy.com",
+        "official_email": "Zwardo@armyspy.com",
+        "mobile_number": "01.61.26.68.47",
+        "residential_number": "01.61.26.68.470",
+        "national_id_number": "147062707841787",
+        "date_of_birth": "1977-11-18",
+        "residential_address": "6asdasdard 94260 FRESNES",
+        "permanent_address": "Ehas s ambard 94260 FRESNES",
+        "joining_date": "2021-11-18",
+        "salary": "$1000",
+        "status": "Probationary",
+        "job_title": "Senior Developer"
+    }
+]

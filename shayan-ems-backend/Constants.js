@@ -1,0 +1,9 @@
+const PER_LATE_ARRIVAL = 250
+const MONTH_DAYS = 30
+const EXEMPTION_PER_MONTH = 2
+
+export default {
+    PER_LATE_ARRIVAL,
+    MONTH_DAYS,
+    EXEMPTION_PER_MONTH,
+}

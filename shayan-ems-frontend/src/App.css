@@ -1,0 +1,111 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.MuiDrawer-paperAnchorDockedLeft-40 {
+  border-right: none !important;
+}
+
+.MuiDrawer-paperAnchorDockedLeft-208 {
+  border-right: none !important;
+}
+
+.LoaderWrapper {
+  display: flex;
+  margin-left: 45%;
+}
+
+.UpdateEmployee-paper-1935 {
+  max-height: 550px;
+}
+table {
+  width: 100%;
+}
+
+.MuiTableCell-root {
+  padding: 5px !important;
+}
+
+.mui-data-table {
+  height: 100%;
+  width: 70vw;
+}
+
+.shift-list {
+  width: 65vw;
+}
+
+@media (max-width: 968px) {
+  .mui-data-table {
+    width: 65vw;
+  }
+  .shift-list {
+    width: 60vw;
+  }
+  .shift-paper {
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 790px) {
+  .Paperbase-drawer-2 {
+    display: none;
+  }
+  .PrivateHiddenCss-xsDown-7 {
+    display: none !important;
+  }
+  .MuiPaper-root.MuiCard-root {
+    width: 90%;
+  }
+  .mui-data-table {
+    width: 95%;
+    margin: auto;
+  }
+}
+
+@media (max-width: 680px) {
+  .mui-data-table {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 600px) {
+  .MuiTab-root {
+    min-width: 60px !important;
+  }
+}

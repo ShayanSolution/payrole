@@ -1,0 +1,34 @@
+version: "3.8"
+
+services:
+  app:
+    stdin_open: true
+    environment:
+      - CHOKIDAR_USEPOLLING=true
+    container_name: shayan-ems-frontend
+    image: shayan-ems-frontend
+    build:
+      context: ./shayan-ems-frontend/
+      target: Dockerfile
+    volumes:
+      # - /shayan-ems-frontend/app/node_modules
+      - ./shayan-ems-frontend/:/app
+    ports:
+      - 3000:3000
+
+  web:
+    stdin_open: true
+    container_name: shayan-ems-backend
+    image: shayan-ems-backend
+    build:
+      context: ./shayan-ems-backend/
+      target: Dockerfile
+    volumes:
+      - ./shayan-ems-backend/:/src
+    command: npm run start-dev
+    ports:
+        - "5000:5000"
+    environment:
+      NODE_ENV: development
+      DEBUG: nodejs-docker-express:*
+      CHOKIDAR_USEPOLLING : 'true'

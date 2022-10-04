@@ -1,0 +1,45 @@
+import React from "react";
+import Modal from "@material-ui/core/Modal";
+import Backdrop from "@material-ui/core/Backdrop";
+import Fade from "@material-ui/core/Fade";
+import { Paper } from "@material-ui/core";
+import { Button } from "@material-ui/core";
+import SuggestionDetails from "./Suggestiondetails";
+import { modalStyle, modalFooter } from "@styles/styledComponents";
+
+const ViewSuggestion = (props) => {
+  const { data } = props;
+  return (
+    <div>
+      <Modal
+        open={true}
+        closeAfterTransition
+        BackdropComponent={Backdrop}
+        BackdropProps={{
+          timeout: 500,
+        }}
+        style={modalStyle}
+      >
+        <Fade in={true}>
+          <Paper elevation={3} variant="normal" square>
+            <div>
+              <SuggestionDetails data={data} />
+            </div>
+            <div style={modalFooter}>
+              <Button
+                type="submit"
+                variant="contained"
+                color="primary"
+                onClick={props.openModal}
+              >
+                Close
+              </Button>
+            </div>
+          </Paper>
+        </Fade>
+      </Modal>
+    </div>
+  );
+};
+
+export default ViewSuggestion;

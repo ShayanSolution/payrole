@@ -1,0 +1,57 @@
+{
+    "name": "employee-management",
+    "version": "1.0.0",
+    "description": "employee-management",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "start-dev": "nodemon index.js",
+        "start": "node index.js",
+        "test": "jest",
+        "seed": "nodemon seeder.js",
+        "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install",
+        "emp-seed": "node seeder/employees.js",
+        "leave-seed": "node seeder/leave.js",
+        "payroll-seed": "node seeder/payroll.js",
+        "format:check": "prettier --check .",
+        "format:write": "prettier --write .",
+        "lint:check": "eslint .",
+        "lint:fix": "eslint --fix ."
+    },
+    "author": "Shayan",
+    "license": "Shayan",
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest",
+            "jsx"
+        ]
+    },
+    "dependencies": {
+        "bcryptjs": "^2.4.3",
+        "body-parser": "^1.19.0",
+        "cors": "^2.8.5",
+        "dotenv": "^10.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "express": "^4.17.1",
+        "express-async-handler": "^1.2.0",
+        "jest": "^28.1.3",
+        "jsonwebtoken": "^8.5.1",
+        "moment": "^2.29.3",
+        "mongodb": "^3.6.5",
+        "mongoose": "^5.12.2",
+        "mongoose-seed": "^0.6.0",
+        "node-schedule": "^2.1.0",
+        "nodemailer": "^6.7.3",
+        "nodemon": "^2.0.7",
+        "prettier": "^2.7.1",
+        "randomstring": "^1.2.1",
+        "socket.io": "^4.5.1"
+    },
+    "devDependencies": {
+        "@babel/preset-env": "^7.18.10",
+        "@types/dotenv": "^8.2.0",
+        "eslint": "^8.21.0",
+        "eslint-plugin-react": "^7.30.1"
+    }
+}
